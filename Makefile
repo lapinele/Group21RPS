@@ -1,35 +1,26 @@
-OJBS = main.o RPSGame.o tool.o rock.o paper.o scissors.o
-CC = g++
+#I've added some notes using echo to the make and clean process,
+#and removed compile msgs. Hopefully they are helpful - Patrick
+
+OJBS = main.o
+CC = g++ 
 FLAGS = -std=c++0x -Wall
 
 game: $(OJBS)
-	@echo '[BUILDING] game...
-	$(CC) $(FLAGS) $(OJBS) -o game
-	@echo '[DONE] - Project output has file name: game'
+	@echo '[BUILDING] --- game'
+	@$(CC) $(FLAGS) $(OJBS) -o game
+	@echo '[DONE!] Output file: game'
 
 main.o: main.cpp
-	$(CC) $(FLAGS) main.cpp
-
-RPSGame.o: RPSGame.cpp
-	$(CC) $(FLAGS) RPSGame.cpp
-
-tool.o: tool.cpp
-	$(CC) $(FLAGS) tool.cpp
-
-rock.o: rock.cpp
-	$(CC) $(FLAGS) rock.cpp
-
-paper.o: paper.cpp
-	$(CC) $(FLAGS) paper.cpp
-
-scissors.o: scissors.cpp
-	$(CC) $(FLAGS) scissors.cpp
+	@echo '[BUILDING] --- main'
+	@$(CC) -c $(FLAGS) main.cpp
 
 clean:
-	rm *.o
+	@echo '[CLEANING] ...'
+	@rm *.o
+	@echo '... [DONE!]'
 
 .PHONY: valgrind
 
 valgrind:
-	valgrind --tool=memcheck ant
+	valgrind --tool=memcheck
 
