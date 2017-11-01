@@ -4,3 +4,23 @@
  * Date: 10/25/2017
  * Description:
 *********************************************************************/
+#include "tool.hpp"
+
+Tool::Tool() {
+	//set default strength
+	this->strength = 1;
+}
+
+Tool::Tool(int userInput) {
+//user sets strength
+	this->setStrength(userInput);
+}
+
+void Tool::setStrength(int userInput) {
+	strength = userInput;
+}
+
+char Tool::fight(char type) {
+
+	return 0;
+}
