@@ -5,12 +5,13 @@
  * Date: 10/25/2017
  * Description:
 *********************************************************************/
-#include <iostream>
 
-using std::cout;
-using std::endl;
+#include "RPSGame.hpp"
 
 int main() {
-    cout << "Hello World" << endl;
+    
+	RPSGame rps;
+	rps.playGame();
+
     return 0;
-};
+}
