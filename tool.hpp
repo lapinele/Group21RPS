@@ -7,20 +7,22 @@
 #ifndef TOOL_HPP
 #define TOOL_HPP
 
-class Tool{
+class Tool {
 
 protected:
 
-	int strength;
-	char type;
+    int strength;
+    char type;
 
 public:
-	Tool();
-	Tool(int);
-	void setStrength(int);
-	//virtual as it will be overriden by each different type
-	virtual char fight(char type);// will return fight results
+    Tool();
 
+    Tool(int);
 
+    void setStrength(int);
+
+    //virtual as it will be overridden by each different type
+    virtual char fight(char type);// will return fight results
 };
+
 #endif

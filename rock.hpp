@@ -8,20 +8,23 @@
 #ifndef ROCK_HPP
 #define ROCK_HPP
 
-class Rock{
+class Rock {
 
 protected:
 
-	int strength;
-	char type;
+    int strength;
+    char type;
 
 public:
-	Rock();
-	Rock(int);
-	void setStrength(int);
-	//virtual as it will be overriden by each different type
-	virtual char fight(char type);// will return fight results
+    Rock();
 
+    Rock(int);
+
+    void setStrength(int);
+
+    //virtual as it will be overridden by each different type
+    virtual char fight(char type);// will return fight results
 
 };
+
 #endif

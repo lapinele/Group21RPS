@@ -4,7 +4,6 @@ project(Group21RPS)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        inputTest.cpp
         main.cpp
         Makefile
         paper.cpp
@@ -16,6 +15,8 @@ set(SOURCE_FILES
         scissors.cpp
         scissors.hpp
         tool.cpp
-        tool.hpp Rock.cpp Rock.hpp)
+        tool.hpp Rock.cpp Rock.hpp
+        validChar.cpp
+        )
 
 add_executable(Group21RPS ${SOURCE_FILES})

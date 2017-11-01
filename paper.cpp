@@ -23,6 +23,7 @@ void Paper::setStrength(int userInput) {
 
 char Paper::fight(char computer) {
 	char winner; // 'h', 'c', 't' (human, computer, tie)
+    //TODO
 
 	return winner;
 }

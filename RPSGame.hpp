@@ -4,7 +4,6 @@
  * Date: 10/25/2017
  * Description:
 *********************************************************************/
-
 #ifndef RPSGAME_HPP
 #define RPSGAME_HPP
 

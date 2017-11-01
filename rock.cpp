@@ -13,7 +13,7 @@ Rock::Rock() {
 }
 
 Rock::Rock(int userInput) {
-//user sets strength
+    //user sets strength
 	this->setStrength(userInput);
 }
 
@@ -23,6 +23,8 @@ void Rock::setStrength(int userInput) {
 
 char Rock::fight(char computer) {
 	char winner; // 'h', 'c', 't' (human, computer, tie)
+
+	//TODO
 
 	return winner;
 }

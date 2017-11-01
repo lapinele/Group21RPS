@@ -32,7 +32,7 @@ void RPSGame::playGame()
 	cout << "Would you like to set different strengths for the tools? (y - yes, n - no)" << endl;
 	getline(cin, inputStr);
 	ynInput = validChar(inputStr, yn, 2);
-	// *** THIS IS WHERE STRENGTH WILL NEED TO BE SET *** //
+	//TODO *** THIS IS WHERE STRENGTH WILL NEED TO BE SET *** //
 	cout << "**************************************************" << endl;
 
 	// do while loop for the game to play as long as the user has not input 'e'
@@ -51,9 +51,9 @@ void RPSGame::playGame()
 			userHistory.push_back(rpseInput); // must assign after comp AI done to avoid cheating
 			assignToolUser();
 			
-			// *** FIGHT FUNCTION WILL NEED TO GO HERE *** //
+			//TODO *** FIGHT FUNCTION WILL NEED TO GO HERE *** //
 
-			// *** DELETE UP TO "END DELETE HERE" LINE ONCE FIGHT FUNCTION IS USED *** //
+			//TODO *** DELETE UP TO "END DELETE HERE" LINE ONCE FIGHT FUNCTION IS USED *** //
 			if (rpseInput == compChoice)
 				{gameWinner = 't';}
 			else if (rpseInput == 'r')
@@ -77,7 +77,7 @@ void RPSGame::playGame()
 				else if(compChoice = 'r')
 					{gameWinner = 'c';}
 			}
-			// *** END DELETE HERE *** //
+			//TODO *** END DELETE HERE *** //
 
 			printResults();
 
@@ -95,7 +95,7 @@ void RPSGame::playGame()
 
 void RPSGame::assignToolUser()
 {
-	// *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
+	//TODO *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
 	if (rpseInput == 'r')
 	{
 		cout << "Human: ROCK" << endl;
@@ -168,7 +168,7 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
 			{compChoice = 's';}
 	}
 	
-	// *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
+	//TODO *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
 	if (compChoice == 'r')
 	{
 		cout << "Computer: ROCK" << endl;
