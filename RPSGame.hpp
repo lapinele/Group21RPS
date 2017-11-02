@@ -23,8 +23,8 @@ public:
 	void printResults();
 
 private:
-	// Tool compTool;
-	// Tool userTool;
+	Tool* compTool;
+	Tool* userTool;
 	int rounds;
 	string inputStr;
 	char rpseInput;
@@ -48,6 +48,9 @@ private:
 	char last;
 	char current;
 	int randVal;
+	
+	int userStrength;
+	int compStrength;
 
 };
 
