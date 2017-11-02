@@ -33,6 +33,19 @@ void RPSGame::playGame()
 	getline(cin, inputStr);
 	ynInput = validChar(inputStr, yn, 2);
 	//TODO *** THIS IS WHERE STRENGTH WILL NEED TO BE SET *** //
+	 if (ynInput=='y')
+    	{
+    	cout << "Please enter strength for user" << endl;
+	//requires int validation
+	cin >> userStrength;
+	cout << "Please enter strength for computer" << endl;
+	cin >> compStrength;
+	 }
+	else if(ynInput=='n')
+	{
+	cout << "You have chose to use default strength values" << endl;
+	}
+	
 	cout << "**************************************************" << endl;
 
 	// do while loop for the game to play as long as the user has not input 'e'
@@ -99,14 +112,20 @@ void RPSGame::assignToolUser()
 	if (rpseInput == 'r')
 	{
 		cout << "Human: ROCK" << endl;
+		userTool= new Rock;
+        userTool->setStrength(userStrength);
 	}
 	if (rpseInput == 'p')
 	{
 		cout << "Human: PAPER" << endl;
+		userTool=new Paper;
+		userTool->setStrength(userStrength);
 	}
 	if (rpseInput == 's')
 	{
 		cout << "Human: SCISSORS" << endl;
+		userTool= new Scissors;
+		userTool->setStrength(userStrength);
 	}
 }
 
@@ -172,14 +191,20 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
 	if (compChoice == 'r')
 	{
 		cout << "Computer: ROCK" << endl;
+		compTool=new Rock;
+		compTool->setStrength(compStrength);
 	}
 	if (compChoice == 'p')
 	{
 		cout << "Computer: PAPER" << endl;
+		compTool = new Paper;
+		compTool->setStrength(compStrength);
 	}
 	if (compChoice == 's')
 	{
 		cout << "Computer: SCISSORS" << endl;
+		compTool = new Scissors;
+		compTool->setStrength(compStrength);
 	}
 }
 
