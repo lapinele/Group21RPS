@@ -18,6 +18,8 @@ public:
     Rock(int);
 
     void setStrength(int);
+    
+    int getStrength();
 
     char fight(char type) override;
 
