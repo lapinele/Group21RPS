@@ -8,12 +8,9 @@
 #ifndef ROCK_HPP
 #define ROCK_HPP
 
-class Rock {
+#include "tool.hpp"
 
-protected:
-
-    int strength;
-    char type;
+class Rock : public Tool{
 
 public:
     Rock();
@@ -22,8 +19,7 @@ public:
 
     void setStrength(int);
 
-    //virtual as it will be overridden by each different type
-    virtual char fight(char type);// will return fight results
+    char fight(char type) override ;
 
 };
 

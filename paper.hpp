@@ -8,20 +8,18 @@
 #ifndef PAPER_HPP
 #define PAPER_HPP
 
-class Paper{
+#include "tool.hpp"
 
-protected:
-
-	int strength;
-	char type;
+class Paper : public Tool {
 
 public:
-	Paper();
-	Paper(int);
-	void setStrength(int);
-	//virtual as it will be overriden by each different type
-	virtual char fight(char type);// will return fight results
+    Paper();
 
+    Paper(int);
 
+    void setStrength(int);
+
+    char fight(char type) override;
 };
+
 #endif

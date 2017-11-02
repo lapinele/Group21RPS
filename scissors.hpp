@@ -8,20 +8,20 @@
 #ifndef SCISSORS_HPP
 #define SCISSORS_HPP
 
-class Scissors{
+#include "tool.hpp"
 
-protected:
-
-	int strength;
-	char type;
+class Scissors : public Tool {
 
 public:
-	Scissors();
-	Scissors(int);
-	void setStrength(int);
-	//virtual as it will be overriden by each different type
-	virtual char fight(char type);// will return fight results
+    Scissors();
+
+    Scissors(int);
+
+    void setStrength(int);
+
+    char fight(char type) override ;
 
 
 };
+
 #endif
