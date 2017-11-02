@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Group21RPS.dir/tool.cpp.o"
   "CMakeFiles/Group21RPS.dir/Rock.cpp.o"
   "CMakeFiles/Group21RPS.dir/validChar.cpp.o"
+  "CMakeFiles/Group21RPS.dir/utilities.cpp.o"
   "Group21RPS.pdb"
   "Group21RPS.exe"
   "libGroup21RPS.dll.a"

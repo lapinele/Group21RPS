@@ -13,7 +13,7 @@ Paper::Paper() {
 }
 
 Paper::Paper(int userInput) {
-//user sets strength
+	//user sets strength
 	this->setStrength(userInput);
 }
 

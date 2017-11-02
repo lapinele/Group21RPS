@@ -122,6 +122,12 @@
 		<Unit filename="/cygdrive/c/Users/Patrick/group/tool.hpp">
 			<Option target="Group21RPS"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Patrick/group/utilities.cpp">
+			<Option target="Group21RPS"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Patrick/group/utilities.hpp">
+			<Option target="Group21RPS"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Patrick/group/validChar.cpp">
 			<Option target="Group21RPS"/>
 		</Unit>
