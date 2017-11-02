@@ -19,7 +19,7 @@ public:
 
     void setStrength(int);
 
-    char fight(char type) override ;
+    char fight(char type) override;
 
 };
 

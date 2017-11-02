@@ -2,7 +2,7 @@
  * Author: Noah Buchen, Alexandra Henley, Elliott Lapinel, Patrick
  * Rice, and Samantha Tone
  * Date: 10/25/2017
- * Description:
+ * Description: Header file for the RPSGame class
 *********************************************************************/
 #ifndef RPSGAME_HPP
 #define RPSGAME_HPP
@@ -23,8 +23,7 @@ public:
 	void printResults();
 
 private:
-	// Tool compTool;
-	// Tool userTool;
+
 	int rounds;
 	string inputStr;
 	char rpseInput;
@@ -48,6 +47,7 @@ private:
 	char last;
 	char current;
 	int randVal;
+	int width;
 
 };
 
