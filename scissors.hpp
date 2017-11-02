@@ -1,3 +1,4 @@
+
 /*********************************************************************
  * Author: Noah Buchen, Alexandra Henley, Elliott Lapinel, Patrick
  * Rice, and Samantha Tone
@@ -7,8 +8,9 @@
 
 #ifndef SCISSORS_HPP
 #define SCISSORS_HPP
+#include "tool.hpp"
 
-class Scissors{
+class Scissors: public Tool{
 
 protected:
 
@@ -18,7 +20,8 @@ protected:
 public:
 	Scissors();
 	Scissors(int);
-	void setStrength(int);
+	virtual void setStrength(int);
+	virtual int getStrength();
 	//virtual as it will be overriden by each different type
 	virtual char fight(char type);// will return fight results
 
