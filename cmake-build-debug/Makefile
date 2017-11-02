@@ -312,6 +312,33 @@ tool.cpp.s:
 	$(MAKE) -f CMakeFiles/Group21RPS.dir/build.make CMakeFiles/Group21RPS.dir/tool.cpp.s
 .PHONY : tool.cpp.s
 
+utilities.o: utilities.cpp.o
+
+.PHONY : utilities.o
+
+# target to build an object file
+utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/Group21RPS.dir/build.make CMakeFiles/Group21RPS.dir/utilities.cpp.o
+.PHONY : utilities.cpp.o
+
+utilities.i: utilities.cpp.i
+
+.PHONY : utilities.i
+
+# target to preprocess a source file
+utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/Group21RPS.dir/build.make CMakeFiles/Group21RPS.dir/utilities.cpp.i
+.PHONY : utilities.cpp.i
+
+utilities.s: utilities.cpp.s
+
+.PHONY : utilities.s
+
+# target to generate assembly for a file
+utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/Group21RPS.dir/build.make CMakeFiles/Group21RPS.dir/utilities.cpp.s
+.PHONY : utilities.cpp.s
+
 validChar.o: validChar.cpp.o
 
 .PHONY : validChar.o
@@ -369,6 +396,9 @@ help:
 	@echo "... tool.o"
 	@echo "... tool.i"
 	@echo "... tool.s"
+	@echo "... utilities.o"
+	@echo "... utilities.i"
+	@echo "... utilities.s"
 	@echo "... validChar.o"
 	@echo "... validChar.i"
 	@echo "... validChar.s"

@@ -29,7 +29,6 @@ void RPSGame::playGame() {
     ynInput = validChar(inputStr, yn, 2);
 
     //TODO *** THIS IS WHERE STRENGTH WILL NEED TO BE SET *** //
-    cout << "**************************************************" << endl;
 
     // do while loop for the game to play as long as the user has not input 'e'
     do {
@@ -136,18 +135,22 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
 }
 
 void RPSGame::printResults() {
-    cout << "**************************************************" << endl;
+
+    printBorder(width);
     if (gameWinner == 't') {
-        cout << "It's a tie!" << endl;
+        printCenterTitle("It's a tie!", width);
         ties = ties + 1;
     } else if (gameWinner == 'h') {
-        cout << "Human wins!" << endl;
+        printCenterTitle("Human wins!", width);
         hWins = hWins + 1;
     } else if (gameWinner == 'c') {
-        cout << "Computer wins!" << endl;
+        printCenterTitle("Computer wins!", width);
         cWins = cWins + 1;
     }
-    cout << "RUNNING GAME TOTALS:" << endl;
-    cout << "Human: " << hWins << "\t Computer: " << cWins << "\t Ties: " << ties << endl;
-    cout << "**************************************************" << endl;
+
+    printCenterTitle("Running game totals", width);
+    printLeftAndRightAlignedStrings("Human", to_string(hWins), width);
+    printLeftAndRightAlignedStrings("Computer", to_string(cWins), width);
+    printLeftAndRightAlignedStrings("Ties", to_string(ties), width);
+    printBorder(width);
 }
