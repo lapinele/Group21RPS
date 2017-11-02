@@ -17,6 +17,7 @@ set(SOURCE_FILES
         tool.cpp
         tool.hpp Rock.cpp Rock.hpp
         validChar.cpp
+        utilities.cpp
         )
 
 add_executable(Group21RPS ${SOURCE_FILES})
